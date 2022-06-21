@@ -29,10 +29,15 @@ keymap("n", "<leader>wv", ":vsplit<cr>", opts)
 keymap("n", "<leader>wh", ":split<cr>", opts)
 keymap("n", "<leader>wq", ":close<cr>", opts)
 
+-- Comments
+keymap("n", "<leader>cc", "<cmd>lua require('Comment.api').toggle_current_linewise()<cr>", opts)
+keymap("n", "<leader>cb", "<cmd>lua require('Comment.api').toggle_current_blockwise()<cr>", opts)
+keymap("x", "<leader>cc", "<es><cmd>lua require('Comment.api').toggle_linewise_op(vim.fn.visualmode())<cr>", opts)
+keymap("x", "<leader>cb", "<esc><cmd>lua require('Comment.api').toggle_blockwise_op(vim.fn.visualmode())<cr>", opts)
 
 -- Bbye
 keymap("n", "<leader>bd", ":Bdelete<cr>", opts)
-keymap("n", "<leader>bq", ":Bwipeout<cr>", opts)
+keymap("n", "<leader>bw", ":Bwipeout<cr>", opts)
 
 -- NvimTree
 -- keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)

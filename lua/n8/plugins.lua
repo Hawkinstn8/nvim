@@ -53,9 +53,6 @@ return packer.startup(function(use)
   use "lewis6991/impatient.nvim" --faster load times via cache
   use "nvim-neo-tree/neo-tree.nvim" --folder explorer
   
-  --Sessions
-  use 'rmagatti/auto-session'
-  use 'rmagatti/session-lens'
 
   -- LuaLine
   use {

@@ -79,16 +79,6 @@ _G.packer_plugins = {
     path = "/home/n8/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["alpha-nvim"] = {
-    loaded = true,
-    path = "/home/n8/.local/share/nvim/site/pack/packer/start/alpha-nvim",
-    url = "https://github.com/goolord/alpha-nvim"
-  },
-  ["auto-session"] = {
-    loaded = true,
-    path = "/home/n8/.local/share/nvim/site/pack/packer/start/auto-session",
-    url = "https://github.com/rmagatti/auto-session"
-  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/n8/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -213,11 +203,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/n8/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
-  },
-  ["session-lens"] = {
-    loaded = true,
-    path = "/home/n8/.local/share/nvim/site/pack/packer/start/session-lens",
-    url = "https://github.com/rmagatti/session-lens"
   },
   ["telescope-media-files.nvim"] = {
     loaded = true,
