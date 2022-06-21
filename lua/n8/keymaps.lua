@@ -24,7 +24,15 @@ keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
-keymap("n", "<leader>w", "<C-w><C-p>", opts)
+keymap("n", "<leader>wp", "<C-w><C-p>", opts)
+keymap("n", "<leader>wv", ":vsplit<cr>", opts)
+keymap("n", "<leader>wh", ":split<cr>", opts)
+keymap("n", "<leader>wq", ":close<cr>", opts)
+
+
+-- Bbye
+keymap("n", "<leader>bd", ":Bdelete<cr>", opts)
+keymap("n", "<leader>bq", ":Bwipeout<cr>", opts)
 
 -- NvimTree
 -- keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
