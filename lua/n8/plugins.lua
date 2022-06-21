@@ -48,15 +48,20 @@ return packer.startup(function(use)
   use "numToStr/Comment.nvim" -- comment hotkeys
   use "akinsho/bufferline.nvim"
   use "moll/vim-bbye"
-
+  use 'kyazdani42/nvim-web-devicons'
+  use "MunifTanjim/nui.nvim"
+  use "goolord/alpha-nvim"
+  use "lewis6991/impatient.nvim"
   -- Nvim tree
-  use {
-  'kyazdani42/nvim-tree.lua',
-  requires = {
-    'kyazdani42/nvim-web-devicons', -- optional, for file icons
-  },
-  tag = 'nightly' -- optional, updated every week. (see issue #1193)
- }
+ --  use {
+ --  'kyazdani42/nvim-tree.lua',
+ --  requires = {
+ --    'kyazdani42/nvim-web-devicons', -- optional, for file icons
+ --  },
+ --  tag = 'nightly' -- optional, updated every week. (see issue #1193)
+ -- }
+
+  use "nvim-neo-tree/neo-tree.nvim"
 
   -- LuaLine
   use {
