@@ -14,9 +14,9 @@ catppuccin.setup(
     strings = "NONE",
     variables = "bold",
     numbers = "NONE",
-    booleans = "italic",
-    properties = "bold",
-    types = "bold",
+    booleans = "NONE",
+    properties = "NONE",
+    types = "italic",
     operators = "NONE",
   },
   integrations = {
@@ -48,9 +48,9 @@ catppuccin.setup(
       transparent_panel = false,
     },
     neotree = {
-      enabled = false,
-      show_root = false,
-      transparent_panel = false,
+      enabled = true,
+      show_root = true,
+      transparent_panel = true,
     },
     which_key = false,
     indent_blankline = {
@@ -73,5 +73,5 @@ catppuccin.setup(
   }
 })
 
-vim.g.catppuccin_flavour = "frappe" -- latte, frappe, macchiato, mocha
+vim.g.catppuccin_flavour = "mocha" -- latte, frappe, macchiato, mocha
 vim.cmd[[colorscheme catppuccin]]

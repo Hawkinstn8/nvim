@@ -52,7 +52,7 @@ return packer.startup(function(use)
   use "MunifTanjim/nui.nvim" --dependancy
   use "lewis6991/impatient.nvim" --faster load times via cache
   use "nvim-neo-tree/neo-tree.nvim" --folder explorer
-  
+  use "TimUntersberger/neogit"  
 
   -- LuaLine
   use {

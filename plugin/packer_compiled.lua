@@ -144,6 +144,11 @@ _G.packer_plugins = {
     path = "/home/n8/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
     url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
   },
+  neogit = {
+    loaded = true,
+    path = "/home/n8/.local/share/nvim/site/pack/packer/start/neogit",
+    url = "https://github.com/TimUntersberger/neogit"
+  },
   ["nui.nvim"] = {
     loaded = true,
     path = "/home/n8/.local/share/nvim/site/pack/packer/start/nui.nvim",
