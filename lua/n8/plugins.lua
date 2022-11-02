@@ -46,7 +46,7 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "numToStr/Comment.nvim" -- comment hotkeys
-  use "akinsho/bufferline.nvim" --fancy buffer tabs
+
   use "moll/vim-bbye" --well behaved close buffer
   use 'kyazdani42/nvim-web-devicons' --dependancy
   use "MunifTanjim/nui.nvim" --dependancy
@@ -73,6 +73,7 @@ return packer.startup(function(use)
 
   -- Colorschemes
   use({"catppuccin/nvim", as = "catppuccin"})
+  use "akinsho/bufferline.nvim"  --fancy buffer tabs
 
  use {
   'VonHeikemen/lsp-zero.nvim',
@@ -95,6 +96,8 @@ return packer.startup(function(use)
     {'rafamadriz/friendly-snippets'},
   }
 }
+use "jose-elias-alvarez/null-ls.nvim"
+use('MunifTanjim/prettier.nvim')
 
   -- git
   use "lewis6991/gitsigns.nvim"
