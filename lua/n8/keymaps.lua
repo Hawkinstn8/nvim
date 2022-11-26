@@ -31,10 +31,10 @@ keymap("n", "<leader>wh", ":split<cr>", opts)
 keymap("n", "<leader>wq", ":close<cr>", opts)
 
 -- Comments
-keymap("n", "<leader>cc", "<cmd>lua require('Comment.api').toggle_current_linewise()<cr>", opts)
-keymap("n", "<leader>cb", "<cmd>lua require('Comment.api').toggle_current_blockwise()<cr>", opts)
-keymap("x", "<leader>cc", "<es><cmd>lua require('Comment.api').toggle_linewise_op(vim.fn.visualmode())<cr>", opts)
-keymap("x", "<leader>cb", "<esc><cmd>lua require('Comment.api').toggle_blockwise_op(vim.fn.visualmode())<cr>", opts)
+-- keymap("n", "<leader>cc", "<cmd>lua require('Comment.api').toggle_current_linewise()<cr>", opts)
+-- keymap("n", "<leader>cb", "<cmd>lua require('Comment.api').toggle_current_blockwise()<cr>", opts)
+-- keymap("x", "<leader>cc", "<es><cmd>lua require('Comment.api').toggle_linewise_op(vim.fn.visualmode())<cr>", opts)
+-- keymap("x", "<leader>cb", "<esc><cmd>lua require('Comment.api').toggle_blockwise_op(vim.fn.visualmode())<cr>", opts)
 
 -- Bbye
 keymap("n", "<leader>bd", ":Bdelete<cr>", opts)
@@ -56,9 +56,6 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 -- keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<leader>bb", ":BufferLinePick<cr>",opts)
 
--- Insert --
--- Press jk fast to enter
-keymap("i", "jk", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode
