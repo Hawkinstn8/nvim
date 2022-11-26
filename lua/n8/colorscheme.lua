@@ -1,7 +1,7 @@
 local catppuccin = require("catppuccin")
 
 catppuccin.setup({
-  flavour = "frappe", -- latte, frappe, macchiato, mocha
+  flavour = "mocha", -- latte, frappe, macchiato, mocha
   integrations = {
     treesitter = true,
     mason = true,
