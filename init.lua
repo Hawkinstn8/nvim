@@ -1,4 +1,4 @@
-require("impatient") -- keep at top
+-- require("impatient") -- keep at top
 require("n8.options")
 require("n8.keymaps")
 require("n8.plugins")
@@ -13,4 +13,4 @@ require("n8.lualine")
 require("n8.bufferline")
 require("n8.neo-tree")
 require("n8.neogit")
-require("n8.null-ls")
+require("n8.fterm")
