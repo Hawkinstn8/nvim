@@ -21,10 +21,16 @@ cmp.setup({
     luasnip.lsp_expand(args.body)
     end
   },
-  window = {},
-  mapping = cmp.mapping.preset.insert({}),
+  window = {
+    completion = cmp.config.window.bordered(),
+    documentation = cmp.config.window.bordered(),
+  },
+  mapping = cmp.mapping.preset.insert({['<C-Space>'] = cmp.mapping.complete(),}),
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
   --  { name = 'luasnip'}
-  })
+  }),
+  completion = {
+    autocomplete = false,
+  }
 })

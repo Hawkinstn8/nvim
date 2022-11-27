@@ -8,7 +8,11 @@ catppuccin.setup({
     neotree = true,
     cmp = true,
     telescope = true,
-
+    noice = true,
+    neogit = true,
+    notify = true,
+    native_lsp = true,
+    
   },
   styles = {
           comments = { "italic" },

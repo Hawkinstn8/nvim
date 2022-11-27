@@ -38,6 +38,26 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', '<space>f', function() vim.lsp.buf.format { async = true } end, bufopts)
 end
 
+-- local border = {
+--   {"🭽", "FloatBorder"},
+--   {"▔", "FloatBorder"},
+--   {"🭾", "FloatBorder"},
+--   {"▕", "FloatBorder"},
+--   {"🭿", "FloatBorder"},
+--   {"▁", "FloatBorder"},
+--   {"🭼", "FloatBorder"},
+--   {"▏", "FloatBorder"},
+-- }
+
+-- -- Make Hover have border
+-- local orig_util_open_floating_preview = vim.lsp.util.open_floating_preview
+-- function vim.lsp.util.open_floating_preview(contents, syntax, opts, ...)
+--   opts = opts or {}
+--   opts.border = opts.border or border
+--   return orig_util_open_floating_preview(contents, syntax, opts, ...)
+-- end
+
+
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 local lsp_flags = {
@@ -47,7 +67,8 @@ local lsp_flags = {
 lspconfig['pyright'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
-    capabilities = capabilities
+    capabilities = capabilities,
+    
 }
 lspconfig['tsserver'].setup{
     on_attach = on_attach,

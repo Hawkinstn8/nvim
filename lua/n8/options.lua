@@ -34,6 +34,7 @@ local options = {
   wrap = false,                            -- display lines as one long line
   scrolloff = 8,                           -- is one of my fav
   sidescrolloff = 8,
+  laststatus = 3,
   guifont = "OperatorMono Nerd Font:h13",               -- the font used in graphical neovim applications
 }
 
@@ -45,4 +46,5 @@ end
 
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
-vim.diagnostic.config({virtual_text = false})
+vim.diagnostic.config({virtual_text = false, float = { border = "rounded" }, })
+

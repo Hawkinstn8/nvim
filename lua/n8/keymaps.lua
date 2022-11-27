@@ -88,6 +88,13 @@ keymap("n", "<leader>fg", "<cmd>lua require('telescope.builtin').live_grep()<cr>
 keymap("n", "<leader>fb", "<cmd>lua require('telescope.builtin').buffers()<cr>", opts)
 keymap("n", "<leader>ft", "<cmd>lua require('telescope.builtin').help_tags()<cr>", opts)
 
+-- zen mode
+keymap("n", "<leader>zn", ":TZNarrow<CR>", opts)
+keymap("v", "<leader>zn", ":'<,'>TZNarrow<CR>", opts)
+keymap("n", "<leader>zf", ":TZFocus<CR>", opts)
+keymap("n", "<leader>zm", ":TZMinimalist<CR>", opts)
+keymap("n", "<leader>za", ":TZAtaraxis<CR>", opts)
+
 -- Formatting
 -- For formatting shorcuts see /null-ls.lua
 -- keymap("n", "<leader>pr", "<cmd>vim.lsp.buf.range_formatting({})<cr>", opts)

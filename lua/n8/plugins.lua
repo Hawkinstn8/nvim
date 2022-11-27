@@ -60,6 +60,25 @@ return packer.startup(function(use)
 		requires = { "kyazdani42/nvim-web-devicons", opt = true },
 	})
 
+	-- noice
+	use({
+		"folke/noice.nvim",		
+		requires = {
+		  "MunifTanjim/nui.nvim",
+		  "rcarriga/nvim-notify",
+		  }
+	  })
+
+	-- label inactive buffers
+	use ('ldelossa/buffertag')
+
+	-- mini 
+	use 'echasnovski/mini.cursorword'
+
+	-- zen mode
+	use ("Pocco81/true-zen.nvim")
+	use ("folke/twilight.nvim")
+
 	-- Telescope
 	use("nvim-telescope/telescope.nvim")
 	use("nvim-telescope/telescope-media-files.nvim")
