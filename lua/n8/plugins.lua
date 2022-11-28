@@ -60,7 +60,7 @@ return packer.startup(function(use)
 		requires = { "kyazdani42/nvim-web-devicons", opt = true },
 	})
 
-	-- noice
+	-- noice makes vim.ui_attach pretty, also makes notifications pretty
 	use({
 		"folke/noice.nvim",		
 		requires = {
@@ -68,6 +68,12 @@ return packer.startup(function(use)
 		  "rcarriga/nvim-notify",
 		  }
 	  })
+
+	-- dressing makes vim.select pretty and integrates telescope
+	use {'stevearc/dressing.nvim'}
+
+	-- better lsp ui
+	use "glepnir/lspsaga.nvim"
 
 	-- label inactive buffers
 	use ('ldelossa/buffertag')
@@ -78,6 +84,9 @@ return packer.startup(function(use)
 	-- zen mode
 	use ("Pocco81/true-zen.nvim")
 	use ("folke/twilight.nvim")
+
+	-- keymaps 
+	use( 'mrjones2014/legendary.nvim' )
 
 	-- Telescope
 	use("nvim-telescope/telescope.nvim")

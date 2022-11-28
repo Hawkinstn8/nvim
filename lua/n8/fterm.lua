@@ -5,8 +5,8 @@ end
 
 fterm.setup()
 
-vim.keymap.set('n', '<A-i>', '<CMD>lua require("FTerm").toggle()<CR>')
-vim.keymap.set('t', '<A-i>', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
+vim.keymap.set('n', '<leader>ii', '<CMD>lua require("FTerm").toggle()<CR>')
+vim.keymap.set('t', '<leader>ii', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
 
 local gitui = fterm:new({
     ft = 'fterm_gitui', -- You can also override the default filetype, if you want

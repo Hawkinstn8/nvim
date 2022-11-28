@@ -32,4 +32,5 @@ lualine.setup({
 	},
 	tabline = {},
 	extensions = {},
+	winbar = {}
 })

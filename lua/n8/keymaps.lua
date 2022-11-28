@@ -98,3 +98,27 @@ keymap("n", "<leader>za", ":TZAtaraxis<CR>", opts)
 -- Formatting
 -- For formatting shorcuts see /null-ls.lua
 -- keymap("n", "<leader>pr", "<cmd>vim.lsp.buf.range_formatting({})<cr>", opts)
+
+
+-- legendary
+
+
+local status_ok, legendary = pcall(require, "legendary")
+if not status_ok then
+	return
+end
+
+
+legendary.setup({scratchpad = {
+    -- How to open the scratchpad buffer,
+    -- 'current' for current window, 'float'
+    -- for floating window
+    view = 'float',
+    -- How to show the results of evaluated Lua code.
+    -- 'print' for `print(result)`, 'float' for a floating window.
+    results_view = 'float',
+    -- Border style for floating windows related to the scratchpad
+    float_border = 'rounded',
+    -- Whether to restore scratchpad contents from a cache file
+    keep_contents = true,
+  },})
