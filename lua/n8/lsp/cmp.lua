@@ -25,7 +25,7 @@ cmp.setup({
     completion = cmp.config.window.bordered(),
     documentation = cmp.config.window.bordered(),
   },
-  mapping = cmp.mapping.preset.insert({['<C-Space>'] = cmp.mapping.complete(),}),
+  mapping = require('n8.keymaps').cmp_mappings(),
   sources = cmp.config.sources({
     { name = 'nvim_lsp' },
   --  { name = 'luasnip'}

@@ -1,24 +1,9 @@
 require("impatient") -- keep at top
+
 require("n8.options")
 require("n8.keymaps")
-require("n8.plugins")
+require("n8.packer")
 
 require("n8.lsp")
-require("n8.telescope")
-require("n8.treesitter")
-require("n8.autopairs")
-require("n8.comments")
-require("n8.gitsigns")
-require("n8.lualine")
--- require("n8.bufferline")
-require("n8.neo-tree")
-require("n8.neogit")
-require("n8.fterm")
---require("n8.noice")
-require("n8.lspsaga")
-require("n8.dressing")
-require("n8.buffertag")
-require("n8.zen")
--- require("n8.notify")
-require("n8.mini")
-require("n8.colorscheme")
+require("n8.plugins")
+
