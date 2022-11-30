@@ -105,6 +105,7 @@ return packer.startup(function(use)
 	use("williamboman/mason.nvim")
 	use("williamboman/mason-lspconfig.nvim")
 	use("jose-elias-alvarez/null-ls.nvim")
+	use ("jose-elias-alvarez/typescript.nvim")
 
 	-- Autocompletion
 	use("hrsh7th/nvim-cmp")
