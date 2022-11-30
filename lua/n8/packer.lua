@@ -42,7 +42,7 @@ packer.init({
 return packer.startup(function(use)
 	-- My plugins here
 	use("wbthomason/packer.nvim") -- Have packer manage itself
-	use("nvim-lua/popup.nvim") -- An implementation of the Popup API from vim in Neovim
+	-- use("nvim-lua/popup.nvim") -- An implementation of the Popup API from vim in Neovim
 	use("nvim-lua/plenary.nvim") -- Useful lua functions used ny lots of plugins
 	use("windwp/nvim-autopairs") -- Autopairs, integrates with both cmp and treesitter
 	use("numToStr/Comment.nvim") -- comment hotkeys
@@ -70,7 +70,7 @@ return packer.startup(function(use)
 	--   })
 
 	-- dressing makes vim.select pretty and integrates telescope
-	use {'stevearc/dressing.nvim'}
+	-- use {'stevearc/dressing.nvim'}
 
 	-- better lsp ui
 	use "glepnir/lspsaga.nvim"
@@ -85,8 +85,6 @@ return packer.startup(function(use)
 	use ("Pocco81/true-zen.nvim")
 	use ("folke/twilight.nvim")
 
-	-- keymaps 
-	use( 'mrjones2014/legendary.nvim' )
 
 	-- Telescope
 	use("nvim-telescope/telescope.nvim")
