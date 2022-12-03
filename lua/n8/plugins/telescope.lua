@@ -80,6 +80,9 @@ telescope.setup {
     },
   },
   pickers = {
+    lsp_references = {
+      show_line = false
+    }
     -- Default configuration for builtin pickers goes here:
     -- picker_name = {
     --   picker_config_key = value,
@@ -94,7 +97,10 @@ telescope.setup {
         -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
         filetypes = {"png", "webp", "jpg", "jpeg"},
         find_cmd = "rg" -- find command (defaults to `fd`)
-      }
+      },
+    file_browser = {
+      hijack_netrw = true,
+    }
     -- Your extension configuration goes here:
     -- extension_name = {
     --   extension_config_key = value,
@@ -103,3 +109,6 @@ telescope.setup {
   },
 }
 
+
+
+require("telescope").load_extension "file_browser"

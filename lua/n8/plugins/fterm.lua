@@ -3,8 +3,6 @@ if not status_ok then
   return
 end
 
-fterm.setup()
-
 
 
 local gitui = fterm:new({

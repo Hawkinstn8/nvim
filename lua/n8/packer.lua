@@ -89,6 +89,7 @@ return packer.startup(function(use)
 	-- Telescope
 	use("nvim-telescope/telescope.nvim")
 	use("nvim-telescope/telescope-media-files.nvim")
+	use { "nvim-telescope/telescope-file-browser.nvim" }
 
 	-- Treesitter
 	use({
@@ -99,6 +100,10 @@ return packer.startup(function(use)
 	-- Colorschemes
 	use({ "catppuccin/nvim", as = "catppuccin" })
 	-- use("akinsho/bufferline.nvim") --fancy buffer tabs
+	use {
+		"mcchrish/zenbones.nvim",
+		requires = "rktjmp/lush.nvim"
+	}
 
 	-- LSP Support
 	use("neovim/nvim-lspconfig")

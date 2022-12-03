@@ -65,4 +65,4 @@ catppuccin.setup({
 --       -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
 --   },
 })
-vim.api.nvim_command "colorscheme catppuccin"
+vim.api.nvim_command "colorscheme zenbones"

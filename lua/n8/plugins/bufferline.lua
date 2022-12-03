@@ -4,5 +4,5 @@ if not status_ok then
 end
 
 bufferline.setup({
-	highlights = require("catppuccin.groups.integrations.bufferline").get()
+	-- highlights = require("catppuccin.groups.integrations.bufferline").get()
 })
