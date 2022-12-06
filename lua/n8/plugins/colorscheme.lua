@@ -1,34 +1,33 @@
-local catppuccin = require("catppuccin")
+-- local catppuccin = require("catppuccin")
+--
+-- catppuccin.setup({
+--   flavour = "mocha", -- latte, frappe, macchiato, mocha
+--   integrations = {
+--     treesitter = true,
+--     mason = true,
+--     neotree = true,
+--     cmp = true,
+--     telescope = true,
+--     noice = true,
+--     neogit = true,
+--     notify = true,
+--     native_lsp = true,
+--     
+--   },
+--   styles = {
+--           comments = { "italic" },
+--           conditionals = { "italic" },
+--           loops = {},
+--           functions = {},
+--           keywords = {},
+--           strings = {},
+--           variables = {},
+--           numbers = {},
+--           booleans = {},
+--           properties = {},
+--           types = {},
+--           operators = {},
 
-catppuccin.setup({
-  flavour = "mocha", -- latte, frappe, macchiato, mocha
-  integrations = {
-    treesitter = true,
-    mason = true,
-    neotree = true,
-    cmp = true,
-    telescope = true,
-    noice = true,
-    neogit = true,
-    notify = true,
-    native_lsp = true,
-    
-  },
-  styles = {
-          comments = { "italic" },
-          conditionals = { "italic" },
-          loops = {},
-          functions = {},
-          keywords = {},
-          strings = {},
-          variables = {},
-          numbers = {},
-          booleans = {},
-          properties = {},
-          types = {},
-          operators = {},
-      },
---   background = { -- :h background
 --       light = "latte",
 --       dark = "mocha",
 --   },
@@ -64,5 +63,5 @@ catppuccin.setup({
 --       treesitter = true,
 --       -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
 --   },
-})
+-- })
 vim.api.nvim_command "colorscheme zenbones"

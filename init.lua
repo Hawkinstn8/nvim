@@ -1,4 +1,4 @@
-require("impatient") -- keep at top
+-- require("impatient") -- keep at top
 
 require("n8.options")
 require("n8.keymaps")
