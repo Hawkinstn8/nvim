@@ -11,7 +11,7 @@ require("n8.plugins.fterm")
 require("n8.plugins.buffertag")
 require("n8.plugins.zen")
 -- require("n8.plugins.mini")
- require("n8.plugins.colorscheme")
+require("n8.plugins.colorscheme")
 
 -- unused
 -- require("n8.notify")

@@ -104,7 +104,9 @@ return packer.startup(function(use)
 		"mcchrish/zenbones.nvim",
 		requires = "rktjmp/lush.nvim"
 	}
-
+  use("cideM/yui")
+  use("jaredgorski/fogbell.vim")
+  use "robertmeta/nofrils"
 	-- LSP Support
 	use("neovim/nvim-lspconfig")
 	use("williamboman/mason.nvim")

@@ -37,7 +37,8 @@ local options = {
   laststatus = 3,
   winbar = nil,
   guifont = "OperatorMono Nerd Font:h13",               -- the font used in graphical neovim applications
-  background='light'
+  background='light',
+--   colorscheme = "yui"
 }
 
 vim.opt.shortmess:append "c"
