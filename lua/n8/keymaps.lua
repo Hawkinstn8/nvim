@@ -98,6 +98,7 @@ keymap("n", "<leader>fg", "<cmd>lua require('telescope.builtin').live_grep()<cr>
 keymap("n", "<leader>fb", "<cmd>lua require('telescope.builtin').buffers()<cr>", opts)
 keymap("n", "<leader>ft", "<cmd>lua require('telescope.builtin').help_tags()<cr>", opts)
 keymap("n", "<leader>fr", "<cmd>lua require('telescope.builtin').resume()<cr>", opts)
+keymap("n", "<leader>fv", "<cmd>Telescope file_browser path=%:p:h<cr>", opts)
 
 -- zen mode
 keymap("n", "<leader>zn", ":TZNarrow<CR>", opts)

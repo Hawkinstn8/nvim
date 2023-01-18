@@ -15,5 +15,5 @@ require("n8.plugins.colorscheme")
 
 -- unused
 -- require("n8.notify")
--- require("n8.noice")
+require("n8.plugins.noice")
 -- require("n8.bufferline")

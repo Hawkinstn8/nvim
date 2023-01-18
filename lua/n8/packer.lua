@@ -61,13 +61,13 @@ return packer.startup(function(use)
 	})
 
 	-- noice makes vim.ui_attach pretty, also makes notifications pretty
-	-- use({
-	-- 	"folke/noice.nvim",		
-	-- 	requires = {
-	-- 	  "MunifTanjim/nui.nvim",
-	-- 	  "rcarriga/nvim-notify",
-	-- 	  }
-	--   })
+	use({
+		"folke/noice.nvim",		
+		requires = {
+		  "MunifTanjim/nui.nvim",
+		  "rcarriga/nvim-notify",
+		  }
+	  })
 
 	-- dressing makes vim.select pretty and integrates telescope
 	-- use {'stevearc/dressing.nvim'}
@@ -106,7 +106,7 @@ return packer.startup(function(use)
 	}
   use("cideM/yui")
   use("jaredgorski/fogbell.vim")
-  use "robertmeta/nofrils"
+  use "Hawkinstn8/nofrils"
 	-- LSP Support
 	use("neovim/nvim-lspconfig")
 	use("williamboman/mason.nvim")

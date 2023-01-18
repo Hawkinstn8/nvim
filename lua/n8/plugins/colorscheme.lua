@@ -27,7 +27,7 @@
 --           properties = {},
 --           types = {},
 --           operators = {},
-
+-- --
 --       light = "latte",
 --       dark = "mocha",
 --   },
